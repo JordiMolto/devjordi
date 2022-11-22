@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* PALETA DE COLORES */
+:root {
+  --color-negro: #181818;
+  --color-blanco: #fff;
+  --color-morado: #5b43d6;
+  --color-morado-oscuro: #332179;
+  --color-morado-claro: #7a19f1;
+  --color-amarillo: #f2b200;
+  --blue: rgb(0, 0, 27);
+  --white: white;
+}
+
+/*
+.App {
+  text-align: center;
+}*/
+body{
+  font-family: 'Nunito', sans-serif!important;
+}
+h1,h2,h3,h4,h5{
+  font-weight: bold!important;
+}
+p{
+  font-size: 19px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.zoom {
+  transition: transform .2s;
+  /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.slide-up {
+  animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    line-height: 200px;
+  }
+
+  to {
+    opacity: 1;
+    line-height: 25px;
+  }
+}
+
+
+
+/* ESTILO PERSONALIZADO BOOTSTRAP */
+/* Navbar */
+.navBg {
+  background-color: var(--color-morado-oscuro);
+
+}
+
+.navText {
+  margin: 10px;
+  text-decoration: none;
+  color: white !important;
+  transition: 0.4s;
+}
+
+.navText:hover {
+  color: #cccccc !important;
+}
+
+.navText:focus {
+  color: #b8b8b8 !important;
+}
+
+/* Botón Login/Register */
+.btn-outline-success {
+  background-color: #ffffff !important;
+  border: 0px !important;
+  color: rgb(0, 11, 77) !important;
+  transition: 0.4s;
+}
+
+.btn-outline-success:hover {
+  background-color: #b3b3b3 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+
+@media (max-width: 991px) {
+  #navbarScroll {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .profile{
+    display: block!important;
+  }
+  .profile p{
+    font-size: 5vw;
+  }
+}
+  

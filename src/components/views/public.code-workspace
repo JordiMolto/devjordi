@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "public",
+			"path": "../../../public"
+		},
+		{
+			"name": "src",
+			"path": "../.."
+		},
+		{
+			"name": "devjordi",
+			"path": "../../../../../../devjordi"
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../node_modules"
+		}
+	],
+	"settings": {}
+}

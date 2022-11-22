@@ -1,0 +1,138 @@
+.containerWallpapers {
+    display: flex;
+    background-color: #eee;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.centerWallpapers {
+    column-count: auto;
+    width: 1200px;
+    text-align: center;
+}
+
+.containerWallpapers article {
+    display: inline-block;
+    width: 370px;
+    transition: box-shadow 0.2s ease;
+    margin: 40px 10px 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.containerWallpapers article>img {
+    width: inherit;
+    border-radius: 5px 5px 0 0;
+}
+
+.containerWallpapers article>p {
+    margin: 10px 15px;
+}
+
+.containerWallpapers article:hover {
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.4);
+}
+
+.buscadorWallpapers {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 22px;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.3);
+    z-index: 2;
+    position: relative;
+}
+
+.buscadorWallpapers input {
+    outline: none;
+    border: solid 1px rgb(92, 92, 92);
+    padding: 10px 5px;
+    border-radius: 4px;
+}
+
+.wallp_text1 {
+    max-width: 700px;
+    margin: 80px 15% 70px 15%;
+}
+
+.wallp_text2 {
+    margin: 0 15% 100px 15%;
+    display: flex;
+
+}
+
+.wallp_text2 p {
+    margin-top: 30px;
+}
+
+.h3text {
+    margin: 0 15%;
+    text-align: center;
+}
+
+.woyj {
+    width: 350px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.contenedorwallp {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+.centrado2 {
+    font-size: "15px"!important;
+    font-weight:"normal"!important;
+}
+
+
+@media (max-width: 900px) {
+    .wallp_text1 {
+        display: block;
+    }
+
+    .wallp_text2 {
+        display: block;
+
+    }
+
+    .woyj {
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .centrado {
+        font-size: 35px;
+    }
+
+    .centrado2 {
+        font-size: "15px"!important;
+        font-weight:"normal"!important;
+    }
+    .imgPolytics {
+        height: 200px!important;
+    }
+    .centerWallpapers article{
+       width: 250px;
+    }
+    .centerWallpapers {
+        padding: 0 25px;
+     }
+
+}
